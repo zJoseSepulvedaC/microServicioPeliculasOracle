@@ -1,0 +1,4 @@
+com\example\peliculas_service\PeliculasServiceApplication.class
+com\example\peliculas_service\repositorios\PeliculaRepositorio.class
+com\example\peliculas_service\controller\PeliculaController.class
+com\example\peliculas_service\model\Pelicula.class
