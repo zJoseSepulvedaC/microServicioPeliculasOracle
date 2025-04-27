@@ -36,17 +36,21 @@
 	</dependency>
 
 	<dependency>
+<<<<<<< HEAD
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-hateoas</artifactId>
 	</dependency>
 
 
 	<dependency>
+=======
+>>>>>>> ecd67f2f6b10dade2fee15f606f71ceb6341b664
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-data-jpa</artifactId>
 	</dependency>
 
 	<dependency>
+<<<<<<< HEAD
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-test</artifactId>
     <scope>test</scope>
@@ -61,6 +65,8 @@
 
 
 	<dependency>
+=======
+>>>>>>> ecd67f2f6b10dade2fee15f606f71ceb6341b664
 		<groupId>jakarta.persistence</groupId>
 		<artifactId>jakarta.persistence-api</artifactId>
 		<version>3.1.0</version>

@@ -31,12 +31,10 @@ public class PeliculaController {
 
     @PostMapping
     public ResponseEntity<Pelicula> crearPelicula(@RequestBody Pelicula nuevaPelicula) {
-    if (peliculaRepositorio.existsById(nuevaPelicula.getId())) {
-        return ResponseEntity.status(HttpStatus.CONFLICT).build(); // Mensaje si es que ya existe.
+        if (peliculaRepositorio.existsById(nuevaPelicula.getId())) {
+            return ResponseEntity.status(HttpStatus.CONFLICT).build(); // Mensaje si ya existe
+        }
+        Pelicula guardada = peliculaRepositorio.save(nuevaPelicula);
+        return ResponseEntity.status(HttpStatus.CREATED).body(guardada);
     }
-    Pelicula guardada = peliculaRepositorio.save(nuevaPelicula);
-    return ResponseEntity.status(HttpStatus.CREATED).body(guardada);
-    }
-
-    
 }
